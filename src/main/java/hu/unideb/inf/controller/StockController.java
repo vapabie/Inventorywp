@@ -1,0 +1,14 @@
+package hu.unideb.inf.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@Controller
+public class StockController {
+
+    @GetMapping("")
+    public String showHomePage(){
+        return "stock";
+    }
+}
